@@ -65,4 +65,4 @@ def strategy(history):
     except Exception:
         return random.choice(['R','P','S'])
     
-write_file(-1, 'w+')
+write_file(-1, 'w+') #Only runs when main imports this file; initiates counter.txt at -1
