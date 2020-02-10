@@ -4,11 +4,13 @@ import importlib
 import random
 
 def write_file(counter, mode):
+    #Writes a .txt with the value of counter to the directory
     f = open('counter.txt',mode)
     f.write(str(counter))
     f.close()
 
 def find_opponents(matches):
+    #Returns a list of the IDs of each opponent in the order that this agent will play them
     opponents = []
     for p1, p2, in matches:
         if 'mn629' in p1.name:
@@ -18,6 +20,9 @@ def find_opponents(matches):
     return opponents
 
 def find_strategy(__main__, opponent_name, opponent_history):
+    #Runs opponent_name's strategy function with opponent_history as the argument, and returns the counter to that functions
+    #output, unless their strategy function is determined to be running a proportional strategy, in which case it will return
+    #the counter the last item in opponent_history (i.e. the counter to the last option the opponnent played)
     if opponent_name[-2] ==  '-':
         opponent_name = opponent_name[0:len(opponent_name)-2]
     beat = {'R':'P','P':'S','S':'R'}          
@@ -35,6 +40,7 @@ def find_strategy(__main__, opponent_name, opponent_history):
         return 'R'
     
 def strategy(history):
+    #main
     try:
         import __main__
         
