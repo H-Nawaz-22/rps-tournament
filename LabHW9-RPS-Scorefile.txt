@@ -1,0 +1,13 @@
+11 players, 1000 rounds
+score	pts/rnd	name
+  6504	+0.65040	mn629_9
+  3796	+0.37960	PPropResp
+   963	+0.09630	PLastWin
+   216	+0.02160	PRandRPS
+   -40	-0.00400	PLastWinWin
+  -295	-0.02950	PRandRS
+  -749	-0.07490	PRandPS
+ -1477	-0.14770	PAlwaysR
+ -2055	-0.20550	PAlwaysS
+ -2513	-0.25130	PAlwaysP
+ -4350	-0.43500	PLastLose

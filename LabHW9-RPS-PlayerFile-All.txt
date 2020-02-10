@@ -1,0 +1,11 @@
+PLastWin
+PLastLose
+PAlwaysP
+PAlwaysR
+PAlwaysS
+PRandPS
+PRandRPS
+PRandRS
+PLastWinWin
+PPropResp
+mn629_9
